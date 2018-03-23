@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <body>
+
+        
+        <h1>Submitted Info:</h1>
+        <% for (var x in info) { %>
+            <h3>Name: <%= info[x].name %></h3>
+            <h4>Dojolocation: <%= info[x].location %></h4>
+            <h4>Language: <%= info[x].language %></h4>
+            <h4>Comment: <%= info[x].comment %></h4>
+            <hr>
+        <% } %>
+    
+        <!-- <%= info.name %>
+        <%= info.location %>
+        <%= info.language %>
+        <%= info.comment %> -->
+   
+        <!-- <p>Name {{request.session.name}}</p>
+        <p>Dojo Location {{request.session.location}}</p>
+        <p>Favorite Language {{request.session.language}}</p>
+        <p>Comment {{request.session.comment}}</p>  -->
+        
+        <form action='/' method='get'>
+            <input type='submit' value='Go Back'>
+        </form>
+
+    </body>
+</html>
